@@ -1,0 +1,20 @@
+/* 1. Space between list items */
+.ltx_itemize > .ltx_item,
+.ltx_enumerate > .ltx_item {
+    margin-bottom: 0.4em;
+}
+
+/* 2. Space lists from surrounding text (general) */
+.ltx_itemize,
+.ltx_enumerate {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+/* 3. EXTRA space when a list follows a paragraph */
+.ltx_para + .ltx_itemize,
+.ltx_para + .ltx_enumerate,
+.ltx_p + .ltx_itemize,
+.ltx_p + .ltx_enumerate {
+    margin-top: 0.6em;
+}
