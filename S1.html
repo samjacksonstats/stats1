@@ -14,10 +14,6 @@
 <link rel="prev" href="index.html" title="Statistics 1: Lecture Notes">
 <link rel="next" href="S2.html" title="2 Disease Testing using Bayesian Methods ‣ Statistics 1: Lecture Notes">
 <link rel="section" href="S2.html" title="2 Disease Testing using Bayesian Methods ‣ Statistics 1: Lecture Notes">
-<link rel="section" href="S3.html" title="3 US Presidential Election Polling via Frequentist Methods ‣ Statistics 1: Lecture Notes">
-<link rel="section" href="S4.html" title="4 The Frequentist Statistics Paradigm ‣ Statistics 1: Lecture Notes">
-<link rel="section" href="S5.html" title="5 The Likelihood ‣ Statistics 1: Lecture Notes">
-<link rel="section" href="S6.html" title="6 The Bayesian Statistics Paradigm ‣ Statistics 1: Lecture Notes">
 </head>
 <body>
 <nav class="ltx_page_navbar"><a href="index.html" title="" class="ltx_ref" rel="start"><span class="ltx_text ltx_ref_title">Statistics 1: Lecture Notes</span></a>
@@ -40,10 +36,6 @@
 </ol>
 </li>
 <li class="ltx_tocentry ltx_tocentry_section"><a href="S2.html" title="In Statistics 1: Lecture Notes" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2 </span>Disease Testing using Bayesian Methods</span></a></li>
-<li class="ltx_tocentry ltx_tocentry_section"><a href="S3.html" title="In Statistics 1: Lecture Notes" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3 </span>US Presidential Election Polling via Frequentist Methods</span></a></li>
-<li class="ltx_tocentry ltx_tocentry_section"><a href="S4.html" title="In Statistics 1: Lecture Notes" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">4 </span>The Frequentist Statistics Paradigm</span></a></li>
-<li class="ltx_tocentry ltx_tocentry_section"><a href="S5.html" title="In Statistics 1: Lecture Notes" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">5 </span>The Likelihood</span></a></li>
-<li class="ltx_tocentry ltx_tocentry_section"><a href="S6.html" title="In Statistics 1: Lecture Notes" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">6 </span>The Bayesian Statistics Paradigm</span></a></li>
 </ol></nav>
 </nav>
 <div class="ltx_page_main">
@@ -401,6 +393,8 @@
 </div>
 </li>
 </ul>
+</div>
+<div id="SS3.SSSx1.p2" class="ltx_para">
 <p class="ltx_p">We will examine this in a Bayesian framework, using some techniques you learned in the Probability course. Then we will extend and examine them further.</p>
 </div>
 </section>
@@ -540,13 +534,14 @@ the probability of event <math id="SS4.SSSx1.p1.m3" class="ltx_Math" alttext="A"
 <span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_bold">A3</span></span> 
 <div id="I9.ix3.p1" class="ltx_para">
 <p class="ltx_p">for <math id="I9.ix3.p1.m1" class="ltx_Math" alttext="A" display="inline"><mi>A</mi></math> and <math id="I9.ix3.p1.m2" class="ltx_Math" alttext="B" display="inline"><mi>B</mi></math> disjoint (i.e. <math id="I9.ix3.p1.m3" class="ltx_Math" alttext="A\cap B=\emptyset" display="inline"><mrow><mrow><mi>A</mi><mo>∩</mo><mi>B</mi></mrow><mo>=</mo><mi mathvariant="normal">∅</mi></mrow></math>) then:</p>
-<table id="Ex1" class="ltx_equation ltx_eqn_table">
+<table id="E1" class="ltx_equation ltx_eqn_table">
 
 <tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
 <td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
-<td class="ltx_eqn_cell ltx_align_center"><math id="Ex1.m1" class="ltx_Math" alttext="\textrm{P}\!\left(A\cup B\right)\;=\;\textrm{P}\!\left(A\right)+\textrm{P}\!%
+<td class="ltx_eqn_cell ltx_align_center"><math id="E1.m1" class="ltx_Math" alttext="\textrm{P}\!\left(A\cup B\right)\;=\;\textrm{P}\!\left(A\right)+\textrm{P}\!%
 \left(B\right)" display="block"><mrow><mrow><mpadded width="0.611em"><mtext>P</mtext></mpadded><mo>⁢</mo><mrow><mo>(</mo><mrow><mi>A</mi><mo>∪</mo><mi>B</mi></mrow><mo rspace="0.280em">)</mo></mrow></mrow><mo rspace="0.558em">=</mo><mrow><mrow><mpadded width="0.611em"><mtext>P</mtext></mpadded><mo>⁢</mo><mrow><mo>(</mo><mi>A</mi><mo>)</mo></mrow></mrow><mo>+</mo><mrow><mpadded width="0.611em"><mtext>P</mtext></mpadded><mo>⁢</mo><mrow><mo>(</mo><mi>B</mi><mo>)</mo></mrow></mrow></mrow></mrow></math></td>
 <td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1)</span></td>
 </tr></tbody>
 </table>
 </div>
@@ -713,12 +708,13 @@ initial probabilities.</p>
 <span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_bold">–</span></span> 
 <div id="I12.i5.I1.i2.p1" class="ltx_para">
 <p class="ltx_p">An event <math id="I12.i5.I1.i2.p1.m1" class="ltx_Math" alttext="A" display="inline"><mi>A</mi></math> has probability <math id="I12.i5.I1.i2.p1.m2" class="ltx_Math" alttext="{\rm P}(A)" display="inline"><mrow><mi mathvariant="normal">P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow></math> given by:</p>
-<table id="Ex2" class="ltx_equation ltx_eqn_table">
+<table id="E2" class="ltx_equation ltx_eqn_table">
 
 <tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
 <td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
-<td class="ltx_eqn_cell ltx_align_center"><math id="Ex2.m1" class="ltx_Math" alttext="{\rm P}(A)\;\;=\;\;\lim_{n\rightarrow\infty}\frac{n_{A}}{n}," display="block"><mrow><mrow><mrow><mi mathvariant="normal">P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo rspace="0.560em" stretchy="false">)</mo></mrow></mrow><mo rspace="0.560em">=</mo><mrow><munder><mo movablelimits="false" rspace="0.167em">lim</mo><mrow><mi>n</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mfrac><msub><mi>n</mi><mi>A</mi></msub><mi>n</mi></mfrac></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="E2.m1" class="ltx_Math" alttext="{\rm P}(A)\;\;=\;\;\lim_{n\rightarrow\infty}\frac{n_{A}}{n}," display="block"><mrow><mrow><mrow><mi mathvariant="normal">P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo rspace="0.560em" stretchy="false">)</mo></mrow></mrow><mo rspace="0.560em">=</mo><mrow><munder><mo movablelimits="false" rspace="0.167em">lim</mo><mrow><mi>n</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mfrac><msub><mi>n</mi><mi>A</mi></msub><mi>n</mi></mfrac></mrow></mrow><mo>,</mo></mrow></math></td>
 <td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(2)</span></td>
 </tr></tbody>
 </table>
 <p class="ltx_p">where <math id="I12.i5.I1.i2.p1.m3" class="ltx_Math" alttext="n_{A}" display="inline"><msub><mi>n</mi><mi>A</mi></msub></math> is the number of times event <math id="I12.i5.I1.i2.p1.m4" class="ltx_Math" alttext="A" display="inline"><mi>A</mi></math> occurred in <math id="I12.i5.I1.i2.p1.m5" class="ltx_Math" alttext="n" display="inline"><mi>n</mi></math> (random?) repetitions of the experiment.</p>
@@ -824,11 +820,11 @@ initial probabilities.</p>
 <span class="ltx_tag ltx_tag_item">•</span> 
 <div id="I13.i3.p1" class="ltx_para">
 <p class="ltx_p">These probabilities are related via the rule</p>
-<table id="Ex3" class="ltx_equation ltx_eqn_table">
+<table id="Ex1" class="ltx_equation ltx_eqn_table">
 
 <tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
 <td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
-<td class="ltx_eqn_cell ltx_align_center"><math id="Ex3.m1" class="ltx_Math" alttext="\textrm{P}\!\left(A\cup B\right)=\textrm{P}\!\left(A\right)+\textrm{P}\!\left(%
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ex1.m1" class="ltx_Math" alttext="\textrm{P}\!\left(A\cup B\right)=\textrm{P}\!\left(A\right)+\textrm{P}\!\left(%
 B\right)-\textrm{P}\!\left(A\cap B\right)." display="block"><mrow><mrow><mrow><mpadded width="0.611em"><mtext>P</mtext></mpadded><mo>⁢</mo><mrow><mo>(</mo><mrow><mi>A</mi><mo>∪</mo><mi>B</mi></mrow><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mrow><mpadded width="0.611em"><mtext>P</mtext></mpadded><mo>⁢</mo><mrow><mo>(</mo><mi>A</mi><mo>)</mo></mrow></mrow><mo>+</mo><mrow><mpadded width="0.611em"><mtext>P</mtext></mpadded><mo>⁢</mo><mrow><mo>(</mo><mi>B</mi><mo>)</mo></mrow></mrow></mrow><mo>−</mo><mrow><mpadded width="0.611em"><mtext>P</mtext></mpadded><mo>⁢</mo><mrow><mo>(</mo><mrow><mi>A</mi><mo>∩</mo><mi>B</mi></mrow><mo>)</mo></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
 <td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
 </tr></tbody>
@@ -846,11 +842,11 @@ B\right)-\textrm{P}\!\left(A\cap B\right)." display="block"><mrow><mrow><mrow><m
 <div id="I13.i5.p1" class="ltx_para">
 <p class="ltx_p">The <span class="ltx_text ltx_font_italic">Addition</span> law for disjoint events: If <math id="I13.i5.p1.m1" class="ltx_Math" alttext="A" display="inline"><mi>A</mi></math> and <math id="I13.i5.p1.m2" class="ltx_Math" alttext="B" display="inline"><mi>B</mi></math>
 are disjoint events, then <math id="I13.i5.p1.m3" class="ltx_Math" alttext="\textrm{P}\!\left(A\cap B\right)=0" display="inline"><mrow><mrow><mpadded width="0.611em"><mtext>P</mtext></mpadded><mo>⁢</mo><mrow><mo>(</mo><mrow><mi>A</mi><mo>∩</mo><mi>B</mi></mrow><mo>)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow></math> and so</p>
-<table id="Ex4" class="ltx_equation ltx_eqn_table">
+<table id="Ex2" class="ltx_equation ltx_eqn_table">
 
 <tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
 <td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
-<td class="ltx_eqn_cell ltx_align_center"><math id="Ex4.m1" class="ltx_Math" alttext="\textrm{P}\!\left(A\cup B\right)=\textrm{P}\!\left(A\right)+\textrm{P}\!\left(%
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ex2.m1" class="ltx_Math" alttext="\textrm{P}\!\left(A\cup B\right)=\textrm{P}\!\left(A\right)+\textrm{P}\!\left(%
 B\right)." display="block"><mrow><mrow><mrow><mpadded width="0.611em"><mtext>P</mtext></mpadded><mo>⁢</mo><mrow><mo>(</mo><mrow><mi>A</mi><mo>∪</mo><mi>B</mi></mrow><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mpadded width="0.611em"><mtext>P</mtext></mpadded><mo>⁢</mo><mrow><mo>(</mo><mi>A</mi><mo>)</mo></mrow></mrow><mo>+</mo><mrow><mpadded width="0.611em"><mtext>P</mtext></mpadded><mo>⁢</mo><mrow><mo>(</mo><mi>B</mi><mo>)</mo></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
 <td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
 </tr></tbody>
@@ -875,11 +871,11 @@ already occurred.</p>
 <div id="I14.i2.p1" class="ltx_para">
 <p class="ltx_p">Conditional probabilities are either obtained directly, or by using the
 <span class="ltx_text ltx_font_italic">conditional probability rule</span>:</p>
-<table id="Ex5" class="ltx_equation ltx_eqn_table">
+<table id="Ex3" class="ltx_equation ltx_eqn_table">
 
 <tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
 <td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
-<td class="ltx_eqn_cell ltx_align_center"><math id="Ex5.m1" class="ltx_Math" alttext="\textrm{P}\!\left(A|B\right)=\mbox{$\frac{\textrm{P}\!\left(A\cap B\right)}{%
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ex3.m1" class="ltx_Math" alttext="\textrm{P}\!\left(A|B\right)=\mbox{$\frac{\textrm{P}\!\left(A\cap B\right)}{%
 \textrm{P}\!\left(B\right)}$},\;\;\;{\rm for\;\;}\textrm{P}\!\left(B\right)&gt;0." display="block"><mrow><mrow><mrow><mrow><mpadded width="0.611em"><mtext>P</mtext></mpadded><mo>⁢</mo><mrow><mo>(</mo><mrow><mi>A</mi><mo fence="false">|</mo><mi>B</mi></mrow><mo>)</mo></mrow></mrow><mo>=</mo><mstyle displaystyle="false"><mfrac><mrow><mpadded width="0.611em"><mtext>P</mtext></mpadded><mo>⁢</mo><mrow><mo>(</mo><mrow><mi>A</mi><mo>∩</mo><mi>B</mi></mrow><mo>)</mo></mrow></mrow><mrow><mpadded width="0.611em"><mtext>P</mtext></mpadded><mo>⁢</mo><mrow><mo>(</mo><mi>B</mi><mo>)</mo></mrow></mrow></mfrac></mstyle></mrow><mo rspace="0.997em">,</mo><mrow><mrow><mi>for</mi><mo lspace="0.560em">⁢</mo><mpadded width="0.611em"><mtext>P</mtext></mpadded><mo>⁢</mo><mrow><mo>(</mo><mi>B</mi><mo>)</mo></mrow></mrow><mo>&gt;</mo><mn>0</mn></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
 <td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
 </tr></tbody>
@@ -892,11 +888,11 @@ already occurred.</p>
 <p class="ltx_p">Rearranging this equation gives
 the <span class="ltx_text ltx_font_italic">(general) multiplication rule</span>, useful in simplifying
 probabilities: for any two events <math id="I14.i3.p1.m1" class="ltx_Math" alttext="A" display="inline"><mi>A</mi></math>, <math id="I14.i3.p1.m2" class="ltx_Math" alttext="B" display="inline"><mi>B</mi></math>:</p>
-<table id="Ex6" class="ltx_equation ltx_eqn_table">
+<table id="Ex4" class="ltx_equation ltx_eqn_table">
 
 <tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
 <td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
-<td class="ltx_eqn_cell ltx_align_center"><math id="Ex6.m1" class="ltx_Math" alttext="\textrm{P}\!\left(A\cap B\right)=\textrm{P}\!\left(A|B\right)\textrm{P}\!\left%
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ex4.m1" class="ltx_Math" alttext="\textrm{P}\!\left(A\cap B\right)=\textrm{P}\!\left(A|B\right)\textrm{P}\!\left%
 (B\right)." display="block"><mrow><mrow><mrow><mpadded width="0.611em"><mtext>P</mtext></mpadded><mo>⁢</mo><mrow><mo>(</mo><mrow><mi>A</mi><mo>∩</mo><mi>B</mi></mrow><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mpadded width="0.611em"><mtext>P</mtext></mpadded><mo>⁢</mo><mrow><mo>(</mo><mrow><mi>A</mi><mo fence="false">|</mo><mi>B</mi></mrow><mo>)</mo></mrow><mo>⁢</mo><mpadded width="0.611em"><mtext>P</mtext></mpadded><mo>⁢</mo><mrow><mo>(</mo><mi>B</mi><mo>)</mo></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
 <td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
 </tr></tbody>
@@ -909,11 +905,11 @@ probabilities: for any two events <math id="I14.i3.p1.m1" class="ltx_Math" altte
 <p class="ltx_p">Two events are said to be <span class="ltx_text ltx_font_italic">independent</span> when the occurrence of
 one has no bearing on the occurrence of the other. In terms of
 probability, if <math id="I14.i4.p1.m1" class="ltx_Math" alttext="A,B" display="inline"><mrow><mi>A</mi><mo>,</mo><mi>B</mi></mrow></math> are independent then</p>
-<table id="Ex7" class="ltx_equation ltx_eqn_table">
+<table id="Ex5" class="ltx_equation ltx_eqn_table">
 
 <tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
 <td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
-<td class="ltx_eqn_cell ltx_align_center"><math id="Ex7.m1" class="ltx_Math" alttext="\textrm{P}\!\left(A|B\right)=\textrm{P}\!\left(A\right)" display="block"><mrow><mrow><mpadded width="0.611em"><mtext>P</mtext></mpadded><mo>⁢</mo><mrow><mo>(</mo><mrow><mi>A</mi><mo fence="false">|</mo><mi>B</mi></mrow><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mpadded width="0.611em"><mtext>P</mtext></mpadded><mo>⁢</mo><mrow><mo>(</mo><mi>A</mi><mo>)</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ex5.m1" class="ltx_Math" alttext="\textrm{P}\!\left(A|B\right)=\textrm{P}\!\left(A\right)" display="block"><mrow><mrow><mpadded width="0.611em"><mtext>P</mtext></mpadded><mo>⁢</mo><mrow><mo>(</mo><mrow><mi>A</mi><mo fence="false">|</mo><mi>B</mi></mrow><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mpadded width="0.611em"><mtext>P</mtext></mpadded><mo>⁢</mo><mrow><mo>(</mo><mi>A</mi><mo>)</mo></mrow></mrow></mrow></math></td>
 <td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
 </tr></tbody>
 </table>
@@ -938,24 +934,24 @@ called a <span class="ltx_text ltx_font_italic">(sure)</span> <span class="ltx_t
 <div id="I15.i2.p1" class="ltx_para">
 <p class="ltx_p">Now we can write any other event <math id="I15.i2.p1.m1" class="ltx_Math" alttext="A" display="inline"><mi>A</mi></math> in combination with this
 event: in general,</p>
-<table id="Ex8" class="ltx_equation ltx_eqn_table">
+<table id="Ex6" class="ltx_equation ltx_eqn_table">
 
 <tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
 <td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
-<td class="ltx_eqn_cell ltx_align_center"><math id="Ex8.m1" class="ltx_Math" alttext="\textrm{P}\!\left(A\right)=\textrm{P}\!\left(A\cap E_{1}\right)+\textrm{P}\!%
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ex6.m1" class="ltx_Math" alttext="\textrm{P}\!\left(A\right)=\textrm{P}\!\left(A\cap E_{1}\right)+\textrm{P}\!%
 \left(A\cap E_{2}\right)+\ldots+\textrm{P}\!\left(A\cap E_{n}\right)," display="block"><mrow><mrow><mrow><mpadded width="0.611em"><mtext>P</mtext></mpadded><mo>⁢</mo><mrow><mo>(</mo><mi>A</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mpadded width="0.611em"><mtext>P</mtext></mpadded><mo>⁢</mo><mrow><mo>(</mo><mrow><mi>A</mi><mo>∩</mo><msub><mi>E</mi><mn>1</mn></msub></mrow><mo>)</mo></mrow></mrow><mo>+</mo><mrow><mpadded width="0.611em"><mtext>P</mtext></mpadded><mo>⁢</mo><mrow><mo>(</mo><mrow><mi>A</mi><mo>∩</mo><msub><mi>E</mi><mn>2</mn></msub></mrow><mo>)</mo></mrow></mrow><mo>+</mo><mi mathvariant="normal">…</mi><mo>+</mo><mrow><mpadded width="0.611em"><mtext>P</mtext></mpadded><mo>⁢</mo><mrow><mo>(</mo><mrow><mi>A</mi><mo>∩</mo><msub><mi>E</mi><mi>n</mi></msub></mrow><mo>)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
 <td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
 </tr></tbody>
 </table>
 <p class="ltx_p">which simplifies to</p>
-<table id="S6.EGx1" class="ltx_equationgroup ltx_eqn_eqnarray ltx_eqn_table">
+<table id="S2.EGx1" class="ltx_equationgroup ltx_eqn_eqnarray ltx_eqn_table">
 
-<tbody id="Ex10">
+<tbody id="Ex8">
 <tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
 <td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
-<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ex9.m1" class="ltx_Math" alttext="\displaystyle\textrm{P}\!\left(A\right)" display="inline"><mrow><mpadded width="0.611em"><mtext>P</mtext></mpadded><mo>⁢</mo><mrow><mo>(</mo><mi>A</mi><mo>)</mo></mrow></mrow></math></td>
-<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="Ex9.m2" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
-<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex9.m3" class="ltx_Math" alttext="\displaystyle\textrm{P}\!\left(A|E_{1}\right)\textrm{P}\!\left(E_{1}\right)+%
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ex7.m1" class="ltx_Math" alttext="\displaystyle\textrm{P}\!\left(A\right)" display="inline"><mrow><mpadded width="0.611em"><mtext>P</mtext></mpadded><mo>⁢</mo><mrow><mo>(</mo><mi>A</mi><mo>)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="Ex7.m2" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex7.m3" class="ltx_Math" alttext="\displaystyle\textrm{P}\!\left(A|E_{1}\right)\textrm{P}\!\left(E_{1}\right)+%
 \textrm{P}\!\left(A|E_{2}\right)\textrm{P}\!\left(E_{2}\right)+\ldots+\textrm{%
 P}\!\left(A|E_{n}\right)\textrm{P}\!\left(E_{n}\right)" display="inline"><mrow><mrow><mpadded width="0.611em"><mtext>P</mtext></mpadded><mo>⁢</mo><mrow><mo>(</mo><mrow><mi>A</mi><mo fence="false">|</mo><msub><mi>E</mi><mn>1</mn></msub></mrow><mo>)</mo></mrow><mo>⁢</mo><mpadded width="0.611em"><mtext>P</mtext></mpadded><mo>⁢</mo><mrow><mo>(</mo><msub><mi>E</mi><mn>1</mn></msub><mo>)</mo></mrow></mrow><mo>+</mo><mrow><mpadded width="0.611em"><mtext>P</mtext></mpadded><mo>⁢</mo><mrow><mo>(</mo><mrow><mi>A</mi><mo fence="false">|</mo><msub><mi>E</mi><mn>2</mn></msub></mrow><mo>)</mo></mrow><mo>⁢</mo><mpadded width="0.611em"><mtext>P</mtext></mpadded><mo>⁢</mo><mrow><mo>(</mo><msub><mi>E</mi><mn>2</mn></msub><mo>)</mo></mrow></mrow><mo>+</mo><mi mathvariant="normal">…</mi><mo>+</mo><mrow><mpadded width="0.611em"><mtext>P</mtext></mpadded><mo>⁢</mo><mrow><mo>(</mo><mrow><mi>A</mi><mo fence="false">|</mo><msub><mi>E</mi><mi>n</mi></msub></mrow><mo>)</mo></mrow><mo>⁢</mo><mpadded width="0.611em"><mtext>P</mtext></mpadded><mo>⁢</mo><mrow><mo>(</mo><msub><mi>E</mi><mi>n</mi></msub><mo>)</mo></mrow></mrow></mrow></math></td>
 <td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
@@ -963,8 +959,8 @@ P}\!\left(A|E_{n}\right)\textrm{P}\!\left(E_{n}\right)" display="inline"><mrow><
 <tr class="ltx_eqn_row ltx_align_baseline">
 <td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
 <td class="ltx_td ltx_eqn_cell"></td>
-<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="Ex10.m1" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
-<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex10.m2" class="ltx_Math" alttext="\displaystyle\sum_{i=1}^{n}\textrm{P}\!\left(A|E_{i}\right)\textrm{P}\!\left(E%
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="Ex8.m1" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex8.m2" class="ltx_Math" alttext="\displaystyle\sum_{i=1}^{n}\textrm{P}\!\left(A|E_{i}\right)\textrm{P}\!\left(E%
 _{i}\right)" display="inline"><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover></mstyle><mrow><mpadded width="0.611em"><mtext>P</mtext></mpadded><mo>⁢</mo><mrow><mo>(</mo><mrow><mi>A</mi><mo fence="false">|</mo><msub><mi>E</mi><mi>i</mi></msub></mrow><mo>)</mo></mrow><mo>⁢</mo><mpadded width="0.611em"><mtext>P</mtext></mpadded><mo>⁢</mo><mrow><mo>(</mo><msub><mi>E</mi><mi>i</mi></msub><mo>)</mo></mrow></mrow></mrow></math></td>
 <td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
 </tr>
@@ -992,11 +988,11 @@ conditional probability to simplify matters.</p>
 <div id="I16.i1.p1" class="ltx_para">
 <p class="ltx_p">For any two events <math id="I16.i1.p1.m1" class="ltx_Math" alttext="A,B" display="inline"><mrow><mi>A</mi><mo>,</mo><mi>B</mi></mrow></math>, the multiplication
 rule gives the formula</p>
-<table id="Ex11" class="ltx_equation ltx_eqn_table">
+<table id="Ex9" class="ltx_equation ltx_eqn_table">
 
 <tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
 <td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
-<td class="ltx_eqn_cell ltx_align_center"><math id="Ex11.m1" class="ltx_Math" alttext="\textrm{P}\!\left(A\cap B\right)=\textrm{P}\!\left(A|B\right)\textrm{P}\!\left%
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ex9.m1" class="ltx_Math" alttext="\textrm{P}\!\left(A\cap B\right)=\textrm{P}\!\left(A|B\right)\textrm{P}\!\left%
 (B\right)." display="block"><mrow><mrow><mrow><mpadded width="0.611em"><mtext>P</mtext></mpadded><mo>⁢</mo><mrow><mo>(</mo><mrow><mi>A</mi><mo>∩</mo><mi>B</mi></mrow><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mpadded width="0.611em"><mtext>P</mtext></mpadded><mo>⁢</mo><mrow><mo>(</mo><mrow><mi>A</mi><mo fence="false">|</mo><mi>B</mi></mrow><mo>)</mo></mrow><mo>⁢</mo><mpadded width="0.611em"><mtext>P</mtext></mpadded><mo>⁢</mo><mrow><mo>(</mo><mi>B</mi><mo>)</mo></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
 <td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
 </tr></tbody>
@@ -1008,11 +1004,11 @@ rule gives the formula</p>
 <div id="I16.i2.p1" class="ltx_para">
 <p class="ltx_p">Another
 equivalent formula is obviously</p>
-<table id="Ex12" class="ltx_equation ltx_eqn_table">
+<table id="Ex10" class="ltx_equation ltx_eqn_table">
 
 <tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
 <td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
-<td class="ltx_eqn_cell ltx_align_center"><math id="Ex12.m1" class="ltx_Math" alttext="\textrm{P}\!\left(A\cap B\right)=\textrm{P}\!\left(B|A\right)\textrm{P}\!\left%
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ex10.m1" class="ltx_Math" alttext="\textrm{P}\!\left(A\cap B\right)=\textrm{P}\!\left(B|A\right)\textrm{P}\!\left%
 (A\right)." display="block"><mrow><mrow><mrow><mpadded width="0.611em"><mtext>P</mtext></mpadded><mo>⁢</mo><mrow><mo>(</mo><mrow><mi>A</mi><mo>∩</mo><mi>B</mi></mrow><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mpadded width="0.611em"><mtext>P</mtext></mpadded><mo>⁢</mo><mrow><mo>(</mo><mrow><mi>B</mi><mo fence="false">|</mo><mi>A</mi></mrow><mo>)</mo></mrow><mo>⁢</mo><mpadded width="0.611em"><mtext>P</mtext></mpadded><mo>⁢</mo><mrow><mo>(</mo><mi>A</mi><mo>)</mo></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
 <td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
 </tr></tbody>
@@ -1024,11 +1020,11 @@ equivalent formula is obviously</p>
 <div id="I16.i3.p1" class="ltx_para">
 <p class="ltx_p">By equating these two formulae and rearranging, we obtain the
 formula known as <span class="ltx_text ltx_font_italic">Bayes theorem</span>:</p>
-<table id="Ex13" class="ltx_equation ltx_eqn_table">
+<table id="Ex11" class="ltx_equation ltx_eqn_table">
 
 <tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
 <td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
-<td class="ltx_eqn_cell ltx_align_center"><math id="Ex13.m1" class="ltx_Math" alttext="\textrm{P}\!\left(A|B\right)=\frac{\textrm{P}\!\left(B|A\right)\textrm{P}\!%
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ex11.m1" class="ltx_Math" alttext="\textrm{P}\!\left(A|B\right)=\frac{\textrm{P}\!\left(B|A\right)\textrm{P}\!%
 \left(A\right)}{\textrm{P}\!\left(B\right)}." display="block"><mrow><mrow><mrow><mpadded width="0.611em"><mtext>P</mtext></mpadded><mo>⁢</mo><mrow><mo>(</mo><mrow><mi>A</mi><mo fence="false">|</mo><mi>B</mi></mrow><mo>)</mo></mrow></mrow><mo>=</mo><mfrac><mrow><mpadded width="0.611em"><mtext>P</mtext></mpadded><mo>⁢</mo><mrow><mo>(</mo><mrow><mi>B</mi><mo fence="false">|</mo><mi>A</mi></mrow><mo>)</mo></mrow><mo>⁢</mo><mpadded width="0.611em"><mtext>P</mtext></mpadded><mo>⁢</mo><mrow><mo>(</mo><mi>A</mi><mo>)</mo></mrow></mrow><mrow><mpadded width="0.611em"><mtext>P</mtext></mpadded><mo>⁢</mo><mrow><mo>(</mo><mi>B</mi><mo>)</mo></mrow></mrow></mfrac></mrow><mo lspace="0em">.</mo></mrow></math></td>
 <td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
 </tr></tbody>
