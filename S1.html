@@ -17,6 +17,8 @@
 <link rel="section" href="S2.html" title="2 Disease Testing using Bayesian Methods ‣ Statistics 1: Lecture Notes">
 <link rel="section" href="S3.html" title="3 US Presidential Election Polling via Frequentist Methods ‣ Statistics 1: Lecture Notes">
 <link rel="section" href="S4.html" title="4 The Frequentist Statistics Paradigm ‣ Statistics 1: Lecture Notes">
+<link rel="section" href="S5.html" title="5 The Likelihood ‣ Statistics 1: Lecture Notes">
+<link rel="section" href="S6.html" title="6 The Bayesian Statistics Paradigm ‣ Statistics 1: Lecture Notes">
 </head>
 <body>
 <nav class="ltx_page_navbar"><a href="index.html" title="" class="ltx_ref" rel="start"><span class="ltx_text ltx_ref_title">Statistics 1: Lecture Notes</span></a>
@@ -42,6 +44,8 @@
 <li class="ltx_tocentry ltx_tocentry_section"><a href="S2.html" title="In Statistics 1: Lecture Notes" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2 </span>Disease Testing using Bayesian Methods</span></a></li>
 <li class="ltx_tocentry ltx_tocentry_section"><a href="S3.html" title="In Statistics 1: Lecture Notes" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3 </span>US Presidential Election Polling via Frequentist Methods</span></a></li>
 <li class="ltx_tocentry ltx_tocentry_section"><a href="S4.html" title="In Statistics 1: Lecture Notes" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">4 </span>The Frequentist Statistics Paradigm</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="S5.html" title="In Statistics 1: Lecture Notes" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">5 </span>The Likelihood</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="S6.html" title="In Statistics 1: Lecture Notes" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">6 </span>The Bayesian Statistics Paradigm</span></a></li>
 </ol></nav>
 </nav>
 <div class="ltx_page_main">
@@ -193,7 +197,7 @@
 <li id="I1.i4" class="ltx_item" style="list-style-type:none;">
 <span class="ltx_tag ltx_tag_item">•</span> 
 <div id="I1.i4.p1" class="ltx_para">
-<p class="ltx_p">In short, Statistics facilitates all of this. Without appropriate use of Statistics, an analysis may be fundamentally limited or even utterly flawed.</p>
+<p class="ltx_p">In short, Statistics facilitates all of this. Without appropriate use of Statistics, an analysis may be fundamentally limited or misleading.</p>
 </div>
 </li>
 </ul>
@@ -234,7 +238,7 @@
 <li id="I2.i2" class="ltx_item" style="list-style-type:none;">
 <span class="ltx_tag ltx_tag_item">•</span> 
 <div id="I2.i2.p1" class="ltx_para">
-<p class="ltx_p">So what the hell is it then?</p>
+<p class="ltx_p">So what actually is it then?</p>
 </div>
 </li>
 </ul>
@@ -298,7 +302,7 @@
 <li id="I4.i2" class="ltx_item" style="list-style-type:none;">
 <span class="ltx_tag ltx_tag_item">•</span> 
 <div id="I4.i2.p1" class="ltx_para">
-<p class="ltx_p">There is a major war going on within Statistics, based around two fundamentally opposed schools of thought:</p>
+<p class="ltx_p">There is a major war going on within Statistics, based around two major paradigms with different interpretations of probability and different inferential philosophies, which sometimes lead to very different real-world decisions being made:</p>
 <ul id="I4.i2.I1" class="ltx_itemize">
 <li id="I4.i2.I1.i1" class="ltx_item" style="list-style-type:none;">
 <span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_bold">–</span></span> 
@@ -687,7 +691,7 @@ initial probabilities.</p>
 <li id="I12.i4.I1.i2" class="ltx_item" style="list-style-type:none;">
 <span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_bold">–</span></span> 
 <div id="I12.i4.I1.i2.p1" class="ltx_para">
-<p class="ltx_p">Not so good in more complex situations, e.g. what is the probability of the radioactive decay of a Ceasium atom in a certain time period?</p>
+<p class="ltx_p">Not so good in more complex situations, e.g. what is the probability of the radioactive decay of a Caesium atom in a certain time period?</p>
 </div>
 </li>
 <li id="I12.i4.I1.i3" class="ltx_item" style="list-style-type:none;">
@@ -713,12 +717,12 @@ initial probabilities.</p>
 <li id="I12.i5.I1.i2" class="ltx_item" style="list-style-type:none;">
 <span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_bold">–</span></span> 
 <div id="I12.i5.I1.i2.p1" class="ltx_para">
-<p class="ltx_p">An event <math id="I12.i5.I1.i2.p1.m1" class="ltx_Math" alttext="A" display="inline"><mi>A</mi></math> has probability <math id="I12.i5.I1.i2.p1.m2" class="ltx_Math" alttext="{\rm P}(A)" display="inline"><mrow><mi mathvariant="normal">P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow></math> given by:</p>
+<p class="ltx_p">An event <math id="I12.i5.I1.i2.p1.m1" class="ltx_Math" alttext="A" display="inline"><mi>A</mi></math> has probability <math id="I12.i5.I1.i2.p1.m2" class="ltx_Math" alttext="\textrm{P}\!\left((\right)A)" display="inline"><mrow><mpadded width="0.611em"><mtext>P</mtext></mpadded><mo>⁢</mo><mrow><mo>(</mo><mrow><mrow><mo stretchy="false">(</mo><mo>)</mo></mrow><mo>⁢</mo><mi>A</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></math> given by:</p>
 <table id="E2" class="ltx_equation ltx_eqn_table">
 
 <tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
 <td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
-<td class="ltx_eqn_cell ltx_align_center"><math id="E2.m1" class="ltx_Math" alttext="{\rm P}(A)\;\;=\;\;\lim_{n\rightarrow\infty}\frac{n_{A}}{n}," display="block"><mrow><mrow><mrow><mi mathvariant="normal">P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo rspace="0.560em" stretchy="false">)</mo></mrow></mrow><mo rspace="0.560em">=</mo><mrow><munder><mo movablelimits="false" rspace="0.167em">lim</mo><mrow><mi>n</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mfrac><msub><mi>n</mi><mi>A</mi></msub><mi>n</mi></mfrac></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="E2.m1" class="ltx_Math" alttext="\textrm{P}\!\left((\right)A)\;\;=\;\;\lim_{n\rightarrow\infty}\frac{n_{A}}{n}," display="block"><mrow><mrow><mrow><mpadded width="0.611em"><mtext>P</mtext></mpadded><mo>⁢</mo><mrow><mo>(</mo><mrow><mrow><mo stretchy="false">(</mo><mo>)</mo></mrow><mo>⁢</mo><mi>A</mi></mrow><mo rspace="0.560em" stretchy="false">)</mo></mrow></mrow><mo rspace="0.560em">=</mo><mrow><munder><mo movablelimits="false" rspace="0.167em">lim</mo><mrow><mi>n</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mfrac><msub><mi>n</mi><mi>A</mi></msub><mi>n</mi></mfrac></mrow></mrow><mo>,</mo></mrow></math></td>
 <td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
 <td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(2)</span></td>
 </tr></tbody>
@@ -950,7 +954,7 @@ event: in general,</p>
 </tr></tbody>
 </table>
 <p class="ltx_p">which simplifies to</p>
-<table id="S4.EGx1" class="ltx_equationgroup ltx_eqn_eqnarray ltx_eqn_table">
+<table id="S6.EGx1" class="ltx_equationgroup ltx_eqn_eqnarray ltx_eqn_table">
 
 <tbody id="Ex8">
 <tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
