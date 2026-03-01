@@ -773,30 +773,32 @@ the sample <math id="I12.i1.p1.m2" class="ltx_Math" alttext="x_{1},\dots,x_{n}" 
 <li id="I13.i1" class="ltx_item" style="list-style-type:none;">
 <span class="ltx_tag ltx_tag_item">•</span> 
 <div id="I13.i1.p1" class="ltx_para">
-<p class="ltx_p">We see that if <math id="I13.i1.p1.m1" class="ltx_Math" alttext="T" display="inline"><mi>T</mi></math> is a sufficient statistic for <math id="I13.i1.p1.m2" class="ltx_Math" alttext="\theta" display="inline"><mi>θ</mi></math>, and if we then partially differentiate the likelihood to find the MLE:</p>
-<table id="S6.EGx66" class="ltx_equationgroup ltx_eqn_eqnarray ltx_eqn_table">
+<p class="ltx_p">We see that if <math id="I13.i1.p1.m1" class="ltx_Math" alttext="T" display="inline"><mi>T</mi></math> is a sufficient statistic for <math id="I13.i1.p1.m2" class="ltx_Math" alttext="\theta" display="inline"><mi>θ</mi></math>, and if we then partially differentiate the likelihood we have that:</p>
+<table id="E97" class="ltx_equation ltx_eqn_table">
 
-<tbody id="E97"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
 <td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
-<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="E97.m1" class="ltx_Math" alttext="\displaystyle\frac{\partial\ell(\theta)}{\partial\theta}\;\;=\;\;\frac{%
-\partial}{\partial\theta}[g(T,\theta)\;h(x_{1},\dots,x_{n})]\;\;=\;\;h(x_{1},%
-\dots,x_{n})\frac{\partial}{\partial\theta}g(T,\theta)" display="inline"><mrow><mstyle displaystyle="true"><mfrac><mrow><mo rspace="0em">∂</mo><mrow><mi mathvariant="normal">ℓ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>θ</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mrow><mo rspace="0em">∂</mo><mi>θ</mi></mrow></mfrac></mstyle><mo lspace="0.838em" rspace="0.838em">=</mo><mrow><mstyle displaystyle="true"><mfrac><mo>∂</mo><mrow><mo rspace="0em">∂</mo><mi>θ</mi></mrow></mfrac></mstyle><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>T</mi><mo>,</mo><mi>θ</mi><mo stretchy="false">)</mo></mrow><mo lspace="0.280em">⁢</mo><mi>h</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>x</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo rspace="0.560em" stretchy="false">]</mo></mrow></mrow><mo rspace="0.838em">=</mo><mrow><mi>h</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>x</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mstyle displaystyle="true"><mfrac><mo>∂</mo><mrow><mo rspace="0em">∂</mo><mi>θ</mi></mrow></mfrac></mstyle><mo>⁢</mo><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>T</mi><mo>,</mo><mi>θ</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math></td>
-<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="E97.m2" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
-<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="E97.m3" class="ltx_Math" alttext="\displaystyle 0" display="inline"><mn>0</mn></math></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="E97.m1" class="ltx_Math" alttext="\frac{\partial\ell(\theta)}{\partial\theta}\;\;=\;\;\frac{\partial}{\partial%
+\theta}[g(T,\theta)\;h(x_{1},\dots,x_{n})]\;\;=\;\;h(x_{1},\dots,x_{n})\frac{%
+\partial}{\partial\theta}g(T,\theta)" display="block"><mrow><mfrac><mrow><mo rspace="0em">∂</mo><mrow><mi mathvariant="normal">ℓ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>θ</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mrow><mo rspace="0em">∂</mo><mi>θ</mi></mrow></mfrac><mo lspace="0.838em" rspace="0.838em">=</mo><mrow><mfrac><mo>∂</mo><mrow><mo rspace="0em">∂</mo><mi>θ</mi></mrow></mfrac><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>T</mi><mo>,</mo><mi>θ</mi><mo stretchy="false">)</mo></mrow><mo lspace="0.280em">⁢</mo><mi>h</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>x</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo rspace="0.560em" stretchy="false">]</mo></mrow></mrow><mo rspace="0.838em">=</mo><mrow><mi>h</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>x</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mfrac><mo>∂</mo><mrow><mo rspace="0em">∂</mo><mi>θ</mi></mrow></mfrac><mo>⁢</mo><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>T</mi><mo>,</mo><mi>θ</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math></td>
 <td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
 <td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(97)</span></td>
 </tr></tbody>
-<tbody id="E98"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+</table>
+<p class="ltx_p">so that the MLE <math id="I13.i1.p1.m3" class="ltx_Math" alttext="\hat{\theta}_{MLE}" display="inline"><msub><mover accent="true"><mi>θ</mi><mo>^</mo></mover><mrow><mi>M</mi><mo>⁢</mo><mi>L</mi><mo>⁢</mo><mi>E</mi></mrow></msub></math> satisfies:</p>
+<table id="E98" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
 <td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
-<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="E98.m1" class="ltx_Math" alttext="\displaystyle\Leftrightarrow\quad\quad\frac{\partial}{\partial\theta}g(T,\theta)" display="inline"><mrow><mo stretchy="false">⇔</mo><mspace width="2em"></mspace><mrow><mstyle displaystyle="true"><mfrac><mo>∂</mo><mrow><mo rspace="0em">∂</mo><mi>θ</mi></mrow></mfrac></mstyle><mo>⁢</mo><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>T</mi><mo>,</mo><mi>θ</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math></td>
-<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="E98.m2" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
-<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="E98.m3" class="ltx_Math" alttext="\displaystyle 0." display="inline"><mrow><mn>0</mn><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="E98.m1" class="ltx_Math" alttext="h(x_{1},\dots,x_{n})\frac{\partial}{\partial\theta}g(T,\hat{\theta}_{MLE})\;\;%
+\Leftrightarrow\;\;\frac{\partial}{\partial\theta}g(T,\hat{\theta}_{MLE})\;\;=%
+\;\;0." display="block"><mrow><mrow><mrow><mi>h</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>x</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mfrac><mo>∂</mo><mrow><mo rspace="0em">∂</mo><mi>θ</mi></mrow></mfrac><mo>⁢</mo><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>T</mi><mo>,</mo><msub><mover accent="true"><mi>θ</mi><mo>^</mo></mover><mrow><mi>M</mi><mo>⁢</mo><mi>L</mi><mo>⁢</mo><mi>E</mi></mrow></msub><mo rspace="0.560em" stretchy="false">)</mo></mrow></mrow><mo rspace="0.838em" stretchy="false">⇔</mo><mrow><mrow><mfrac><mo>∂</mo><mrow><mo rspace="0em">∂</mo><mi>θ</mi></mrow></mfrac><mo>⁢</mo><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>T</mi><mo>,</mo><msub><mover accent="true"><mi>θ</mi><mo>^</mo></mover><mrow><mi>M</mi><mo>⁢</mo><mi>L</mi><mo>⁢</mo><mi>E</mi></mrow></msub><mo rspace="0.560em" stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>  0</mn></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
 <td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
 <td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(98)</span></td>
 </tr></tbody>
 </table>
-<p class="ltx_p">(using <math id="I13.i1.p1.m3" class="ltx_Math" alttext="h(x_{1},\dots,x_{n})\neq 0" display="inline"><mrow><mrow><mi>h</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>x</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo>≠</mo><mn>0</mn></mrow></math> for any realised sample) we see that the MLE <math id="I13.i1.p1.m4" class="ltx_Math" alttext="\hat{\theta}_{\text{MLE}}" display="inline"><msub><mover accent="true"><mi>θ</mi><mo>^</mo></mover><mtext>MLE</mtext></msub></math> will only be
-a function of <math id="I13.i1.p1.m5" class="ltx_Math" alttext="T" display="inline"><mi>T</mi></math>, and not of any other components of the data <math id="I13.i1.p1.m6" class="ltx_Math" alttext="x_{1},\dots,x_{n}" display="inline"><mrow><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>x</mi><mi>n</mi></msub></mrow></math>.</p>
+<p class="ltx_p">(using <math id="I13.i1.p1.m4" class="ltx_Math" alttext="h(x_{1},\dots,x_{n})\neq 0" display="inline"><mrow><mrow><mi>h</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>x</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo>≠</mo><mn>0</mn></mrow></math> for any realised sample). Therefore, the MLE <math id="I13.i1.p1.m5" class="ltx_Math" alttext="\hat{\theta}_{\text{MLE}}" display="inline"><msub><mover accent="true"><mi>θ</mi><mo>^</mo></mover><mtext>MLE</mtext></msub></math> will only be
+a function of <math id="I13.i1.p1.m6" class="ltx_Math" alttext="T" display="inline"><mi>T</mi></math>, and not of any other components of the data <math id="I13.i1.p1.m7" class="ltx_Math" alttext="x_{1},\dots,x_{n}" display="inline"><mrow><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>x</mi><mi>n</mi></msub></mrow></math>.</p>
 </div>
 </li>
 </ul>
@@ -811,7 +813,7 @@ a function of <math id="I13.i1.p1.m5" class="ltx_Math" alttext="T" display="inli
 <span class="ltx_tag ltx_tag_item">•</span> 
 <div id="I14.i1.p1" class="ltx_para">
 <p class="ltx_p">For the Bernoulli trials we had likelihood</p>
-<table id="S6.EGx67" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+<table id="S6.EGx66" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
 
 <tbody id="Ex220"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
 <td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
@@ -856,7 +858,7 @@ a function of <math id="I13.i1.p1.m5" class="ltx_Math" alttext="T" display="inli
 <span class="ltx_tag ltx_tag_item">•</span> 
 <div id="I15.i1.p1" class="ltx_para">
 <p class="ltx_p">For the closely related Binomial Scenario we had likelihood</p>
-<table id="S6.EGx68" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+<table id="S6.EGx67" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
 
 <tbody id="Ex223"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
 <td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
@@ -868,7 +870,7 @@ a function of <math id="I13.i1.p1.m5" class="ltx_Math" alttext="T" display="inli
 <tbody id="Ex224"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
 <td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
 <td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ex224.m1" class="ltx_Math" alttext="\displaystyle\ell(p)" display="inline"><mrow><mi mathvariant="normal">ℓ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow></math></td>
-<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex224.m2" class="ltx_Math" alttext="\displaystyle=\;g(x,p)\;h(x_{1},\dots,x_{n})" display="inline"><mrow><mi></mi><mo rspace="0.558em">=</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>p</mi><mo stretchy="false">)</mo></mrow><mo lspace="0.280em">⁢</mo><mi>h</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>x</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex224.m2" class="ltx_Math" alttext="\displaystyle=\;g(x,p)\;h(x)" display="inline"><mrow><mi></mi><mo rspace="0.558em">=</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>p</mi><mo stretchy="false">)</mo></mrow><mo lspace="0.280em">⁢</mo><mi>h</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math></td>
 <td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
 </tr></tbody>
 </table>
@@ -877,7 +879,7 @@ a function of <math id="I13.i1.p1.m5" class="ltx_Math" alttext="T" display="inli
 <tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
 <td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
 <td class="ltx_eqn_cell ltx_align_center"><math id="Ex225.m1" class="ltx_Math" alttext="\text{with}\quad\quad\quad g(x,p)\;\;=\;\;p^{x}(1-p)^{n-x}\quad\quad\text{and}%
-\quad\quad h(x_{1},\dots,x_{n})\;\;=\;\;{n\choose x}" display="block"><mrow><mrow><mrow><mtext>with</mtext><mspace width="3em"></mspace><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>p</mi><mo rspace="0.560em" stretchy="false">)</mo></mrow></mrow></mrow><mo rspace="0.838em">=</mo><mrow><msup><mi>p</mi><mi>x</mi></msup><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>−</mo><mi>p</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mi>n</mi><mo>−</mo><mi>x</mi></mrow></msup></mrow></mrow><mspace width="2em"></mspace><mrow><mrow><mtext>and</mtext><mspace width="2em"></mspace><mrow><mi>h</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>x</mi><mi>n</mi></msub><mo rspace="0.560em" stretchy="false">)</mo></mrow></mrow></mrow><mo rspace="0.838em">=</mo><mrow><mo>(</mo><mfrac linethickness="0pt"><mi>n</mi><mi>x</mi></mfrac><mo>)</mo></mrow></mrow></mrow></math></td>
+\quad\quad h(x)\;\;=\;\;{n\choose x}" display="block"><mrow><mrow><mrow><mtext>with</mtext><mspace width="3em"></mspace><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>p</mi><mo rspace="0.560em" stretchy="false">)</mo></mrow></mrow></mrow><mo rspace="0.838em">=</mo><mrow><msup><mi>p</mi><mi>x</mi></msup><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>−</mo><mi>p</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mi>n</mi><mo>−</mo><mi>x</mi></mrow></msup></mrow></mrow><mspace width="2em"></mspace><mrow><mrow><mtext>and</mtext><mspace width="2em"></mspace><mrow><mi>h</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo rspace="0.560em" stretchy="false">)</mo></mrow></mrow></mrow><mo rspace="0.838em">=</mo><mrow><mo>(</mo><mfrac linethickness="0pt"><mi>n</mi><mi>x</mi></mfrac><mo>)</mo></mrow></mrow></mrow></math></td>
 <td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
 </tr></tbody>
 </table>
@@ -886,7 +888,7 @@ a function of <math id="I13.i1.p1.m5" class="ltx_Math" alttext="T" display="inli
 <li id="I15.i2" class="ltx_item" style="list-style-type:none;">
 <span class="ltx_tag ltx_tag_item">•</span> 
 <div id="I15.i2.p1" class="ltx_para">
-<p class="ltx_p">Hence here again <math id="I15.i2.p1.m1" class="ltx_Math" alttext="T=x" display="inline"><mrow><mi>T</mi><mo>=</mo><mi>x</mi></mrow></math> is the sufficient statistic for our parameter of interest <math id="I15.i2.p1.m2" class="ltx_Math" alttext="\theta=p" display="inline"><mrow><mi>θ</mi><mo>=</mo><mi>p</mi></mrow></math> as before, again assuming we also know <math id="I15.i2.p1.m3" class="ltx_Math" alttext="n" display="inline"><mi>n</mi></math>.</p>
+<p class="ltx_p">Hence the sufficient statistic is now the single data point <math id="I15.i2.p1.m1" class="ltx_Math" alttext="T=x" display="inline"><mrow><mi>T</mi><mo>=</mo><mi>x</mi></mrow></math> for our parameter of interest <math id="I15.i2.p1.m2" class="ltx_Math" alttext="\theta=p" display="inline"><mrow><mi>θ</mi><mo>=</mo><mi>p</mi></mrow></math> as before, again assuming we know <math id="I15.i2.p1.m3" class="ltx_Math" alttext="n" display="inline"><mi>n</mi></math>.</p>
 </div>
 </li>
 </ul>
@@ -922,7 +924,7 @@ same maximum likelihood estimate.</p>
 <span class="ltx_tag ltx_tag_item">•</span> 
 <div id="I17.i1.p1" class="ltx_para">
 <p class="ltx_p">For the Poisson Scenario we had likelihood <math id="I17.i1.p1.m1" class="ltx_Math" alttext="\ell(\lambda)" display="inline"><mrow><mi mathvariant="normal">ℓ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>λ</mi><mo stretchy="false">)</mo></mrow></mrow></math> in terms of the parameter <math id="I17.i1.p1.m2" class="ltx_Math" alttext="\lambda" display="inline"><mi>λ</mi></math>:</p>
-<table id="S6.EGx69" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+<table id="S6.EGx68" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
 
 <tbody id="Ex226"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
 <td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
@@ -937,7 +939,7 @@ same maximum likelihood estimate.</p>
 <td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex227.m1" class="ltx_Math" alttext="\displaystyle=\;\frac{e^{-n\lambda}\lambda^{n\bar{x}}}{\prod_{i=1}^{n}x_{i}!}" display="inline"><mrow><mi></mi><mo rspace="0.558em">=</mo><mstyle displaystyle="true"><mfrac><mrow><msup><mi>e</mi><mrow><mo>−</mo><mrow><mi>n</mi><mo>⁢</mo><mi>λ</mi></mrow></mrow></msup><mo>⁢</mo><msup><mi>λ</mi><mrow><mi>n</mi><mo>⁢</mo><mover accent="true"><mi>x</mi><mo>¯</mo></mover></mrow></msup></mrow><mrow><msubsup><mo>∏</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><mrow><msub><mi>x</mi><mi>i</mi></msub><mo>!</mo></mrow></mrow></mfrac></mstyle></mrow></math></td>
 <td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
 </tr></tbody>
-<tbody><tr class="ltx_eqn_row ltx_align_baseline"><td class="ltx_eqn_cell ltx_align_left" style="white-space:normal;" colspan="5">where we have used <math id="S6.EGx69.m1" class="ltx_Math" alttext="n\bar{x}=\sum_{i=1}^{n}x_{i}" display="inline"><mrow><mrow><mi>n</mi><mo>⁢</mo><mover accent="true"><mi>x</mi><mo>¯</mo></mover></mrow><mo rspace="0.111em">=</mo><mrow><msubsup><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><msub><mi>x</mi><mi>i</mi></msub></mrow></mrow></math>. We can rewrite <math id="S6.EGx69.m2" class="ltx_Math" alttext="\ell(\lambda)" display="inline"><mrow><mi mathvariant="normal">ℓ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>λ</mi><mo stretchy="false">)</mo></mrow></mrow></math> in the form of the Factorisation Theorem as:</td></tr></tbody>
+<tbody><tr class="ltx_eqn_row ltx_align_baseline"><td class="ltx_eqn_cell ltx_align_left" style="white-space:normal;" colspan="5">where we have used <math id="S6.EGx68.m1" class="ltx_Math" alttext="n\bar{x}=\sum_{i=1}^{n}x_{i}" display="inline"><mrow><mrow><mi>n</mi><mo>⁢</mo><mover accent="true"><mi>x</mi><mo>¯</mo></mover></mrow><mo rspace="0.111em">=</mo><mrow><msubsup><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><msub><mi>x</mi><mi>i</mi></msub></mrow></mrow></math>. We can rewrite <math id="S6.EGx68.m2" class="ltx_Math" alttext="\ell(\lambda)" display="inline"><mrow><mi mathvariant="normal">ℓ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>λ</mi><mo stretchy="false">)</mo></mrow></mrow></math> in the form of the Factorisation Theorem as:</td></tr></tbody>
 <tbody id="Ex228"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
 <td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
 <td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ex228.m1" class="ltx_Math" alttext="\displaystyle\ell(\lambda)\;" display="inline"><mrow><mi mathvariant="normal">ℓ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>λ</mi><mo stretchy="false">)</mo></mrow></mrow></math></td>

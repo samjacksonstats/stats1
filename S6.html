@@ -237,14 +237,14 @@ What inference can we make about the effectiveness of the drug?</p>
 
 <div id="SS1.SSSx6.p1" class="ltx_para">
 <p class="ltx_p">In the case of our binomial example, we know from previously</p>
-<table id="EGx70" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+<table id="EGx69" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
 
 <tbody id="Ex232"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
 <td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
 <td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ex232.m1" class="ltx_Math" alttext="\displaystyle\textrm{E}\left[\hat{p}_{\text{MLE}}\right]" display="inline"><mrow><mtext>E</mtext><mo>⁢</mo><mrow><mo>[</mo><msub><mover accent="true"><mi>p</mi><mo>^</mo></mover><mtext>MLE</mtext></msub><mo>]</mo></mrow></mrow></math></td>
 <td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex232.m2" class="ltx_Math" alttext="\displaystyle=p," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mi>p</mi></mrow><mo>,</mo></mrow></math></td>
 <td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ex232.m3" class="ltx_Math" alttext="\displaystyle\textrm{Var}\left[\hat{p}_{\text{MLE}}\right]" display="inline"><mrow><mtext>Var</mtext><mo>⁢</mo><mrow><mo>[</mo><msub><mover accent="true"><mi>p</mi><mo>^</mo></mover><mtext>MLE</mtext></msub><mo>]</mo></mrow></mrow></math></td>
-<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex232.m4" class="ltx_Math" alttext="\displaystyle=\frac{\hat{p}_{\text{MLE}}(1-\hat{p}_{\text{MLE}})}{n}," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mstyle displaystyle="true"><mfrac><mrow><msub><mover accent="true"><mi>p</mi><mo>^</mo></mover><mtext>MLE</mtext></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>−</mo><msub><mover accent="true"><mi>p</mi><mo>^</mo></mover><mtext>MLE</mtext></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mi>n</mi></mfrac></mstyle></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex232.m4" class="ltx_Math" alttext="\displaystyle=\frac{p(1-p)}{n}," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mstyle displaystyle="true"><mfrac><mrow><mi>p</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>−</mo><mi>p</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mi>n</mi></mfrac></mstyle></mrow><mo>,</mo></mrow></math></td>
 <td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ex232.m5" class="ltx_Math" alttext="\displaystyle\text{$n$ large}\implies\hat{p}_{\text{MLE}}" display="inline"><mrow><mrow><mi>n</mi><mtext> large</mtext></mrow><mo stretchy="false">⟹</mo><msub><mover accent="true"><mi>p</mi><mo>^</mo></mover><mtext>MLE</mtext></msub></mrow></math></td>
 <td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex232.m6" class="ltx_Math" alttext="\displaystyle\sim{N}\!\left(p,\textrm{Var}\left[\hat{p}_{\text{MLE}}\right]%
 \right)." display="inline"><mrow><mrow><mi></mi><mo>∼</mo><mrow><mpadded width="0.742em"><mi>N</mi></mpadded><mo>⁢</mo><mrow><mo>(</mo><mi>p</mi><mo>,</mo><mrow><mtext>Var</mtext><mo>⁢</mo><mrow><mo>[</mo><msub><mover accent="true"><mi>p</mi><mo>^</mo></mover><mtext>MLE</mtext></msub><mo>]</mo></mrow></mrow><mo>)</mo></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
@@ -845,7 +845,7 @@ x_{n},y}\right){f}\!\left({x_{2}\mid x_{3},\dots,x_{n},y}\right)\dots{f}\!%
 <span class="ltx_tag ltx_tag_item">•</span> 
 <div id="I20.i2.p1" class="ltx_para">
 <p class="ltx_p">We define <math id="I20.i2.p1.m1" class="ltx_Math" alttext="X" display="inline"><mi>X</mi></math> and <math id="I20.i2.p1.m2" class="ltx_Math" alttext="Y" display="inline"><mi>Y</mi></math> as independent (<math id="I20.i2.p1.m3" class="ltx_Math" alttext="X\mathrel{\text{\scalebox{1.07}{$\perp\mkern-10.0mu\perp$}}}Y" display="inline"><mrow><mi>X</mi><mpadded depth="2.1pt" height="7.5pt" width="16.0pt"><mi></mi><mpadded width="0.190em"><mo>⟂</mo></mpadded><mo>⟂</mo></mpadded><mi>Y</mi></mrow></math>) if and only if <math id="I20.i2.p1.m4" class="ltx_Math" alttext="{f}\!\left({x,y}\right)={f}\!\left({x}\right){f}\!\left({y}\right)" display="inline"><mrow><mrow><mpadded width="0.427em"><mi>f</mi></mpadded><mo>⁢</mo><mrow><mo>(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mpadded width="0.427em"><mi>f</mi></mpadded><mo>⁢</mo><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>⁢</mo><mpadded width="0.427em"><mi>f</mi></mpadded><mo>⁢</mo><mrow><mo>(</mo><mi>y</mi><mo>)</mo></mrow></mrow></mrow></math>. By expanding <math id="I20.i2.p1.m5" class="ltx_Math" alttext="{f}\!\left({x,y}\right)" display="inline"><mrow><mpadded width="0.427em"><mi>f</mi></mpadded><mo>⁢</mo><mrow><mo>(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>)</mo></mrow></mrow></math> via the multiplication rule we arrive at the equivalent definitions:</p>
-<table id="EGx71" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+<table id="EGx70" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
 
 <tbody id="Ex233"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
 <td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
@@ -892,7 +892,7 @@ x_{n},y}\right){f}\!\left({x_{2}\mid x_{3},\dots,x_{n},y}\right)\dots{f}\!%
 
 <div id="SS2.SSSx4.p1" class="ltx_para">
 <p class="ltx_p">Suppose <math id="SS2.SSSx4.p1.m1" class="ltx_Math" alttext="X" display="inline"><mi>X</mi></math>, <math id="SS2.SSSx4.p1.m2" class="ltx_Math" alttext="Y" display="inline"><mi>Y</mi></math>, and <math id="SS2.SSSx4.p1.m3" class="ltx_Math" alttext="Z" display="inline"><mi>Z</mi></math> are random variables with <math id="SS2.SSSx4.p1.m4" class="ltx_Math" alttext="{f}\!\left({y,z}\right)&gt;0" display="inline"><mrow><mrow><mpadded width="0.427em"><mi>f</mi></mpadded><mo>⁢</mo><mrow><mo>(</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo>)</mo></mrow></mrow><mo>&gt;</mo><mn>0</mn></mrow></math>, then <math id="SS2.SSSx4.p1.m5" class="ltx_Math" alttext="X" display="inline"><mi>X</mi></math> and <math id="SS2.SSSx4.p1.m6" class="ltx_Math" alttext="Y" display="inline"><mi>Y</mi></math> are <em class="ltx_emph ltx_font_italic">conditionally independent given <math id="SS2.SSSx4.p1.m7" class="ltx_Math" alttext="Z" display="inline"><mi>Z</mi></math></em> if and only if</p>
-<table id="EGx72" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+<table id="EGx71" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
 
 <tbody id="Ex235"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
 <td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
@@ -1041,7 +1041,7 @@ We assign a <em class="ltx_emph ltx_font_italic">prior distribution</em> <math i
 
 <div id="SS3.SSSx2.p1" class="ltx_para">
 <p class="ltx_p">Any Bayesian statistical problem can be simply expressed as</p>
-<table id="EGx73" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+<table id="EGx72" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
 
 <tbody id="E108"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
 <td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
@@ -1085,7 +1085,7 @@ probability}}." display="inline"><mrow><mrow><mi></mi><mo>=</mo><mstyle displays
 <h3 class="ltx_title ltx_title_subsubsection">Fundamental Equation of Bayesian Statistics: The Posterior (simplified)</h3>
 
 <div id="SS3.SSSx3.p1" class="ltx_para">
-<table id="EGx74" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+<table id="EGx73" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
 
 <tbody id="Ex237"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
 <td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
@@ -1184,7 +1184,7 @@ The unnormalised posterior of (<a href="#E110" title="In Fundamental Equation of
 </div>
 <div id="SS3.SSSx4.p3" class="ltx_para">
 <p class="ltx_p">Thus we have</p>
-<table id="EGx75" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+<table id="EGx74" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
 
 <tbody id="Ex241"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
 <td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
@@ -1228,7 +1228,7 @@ The unnormalised posterior of (<a href="#E110" title="In Fundamental Equation of
 </div>
 <div id="SS3.SSSx4.p6" class="ltx_para">
 <p class="ltx_p">What if we thought <math id="SS3.SSSx4.p6.m1" class="ltx_Math" alttext="p" display="inline"><mi>p</mi></math> was more likely to take larger values rather than smaller,  i.e. our prior belief was that the drug was more likely to have a positive effect. We could express this by choosing a prior that was proportional to <math id="SS3.SSSx4.p6.m2" class="ltx_Math" alttext="p" display="inline"><mi>p</mi></math>. For example, an appropriate choice of density function could be <math id="SS3.SSSx4.p6.m3" class="ltx_Math" alttext="{f}\!\left({p}\right)=2p" display="inline"><mrow><mrow><mpadded width="0.427em"><mi>f</mi></mpadded><mo>⁢</mo><mrow><mo>(</mo><mi>p</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mn>2</mn><mo>⁢</mo><mi>p</mi></mrow></mrow></math>. We observe the same data and have the same likelihood, but the posterior for <math id="SS3.SSSx4.p6.m4" class="ltx_Math" alttext="p\mid x" display="inline"><mrow><mi>p</mi><mo>∣</mo><mi>x</mi></mrow></math> is now:</p>
-<table id="EGx76" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+<table id="EGx75" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
 
 <tbody id="Ex246"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
 <td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
@@ -1574,7 +1574,7 @@ x)^{b-1},0\leq x\leq 1" display="block"><mrow><mrow><mrow><mpadded width="0.427e
 <span class="ltx_tag ltx_tag_item">2.</span> 
 <div id="I35.i2.p1" class="ltx_para">
 <p class="ltx_p">If <math id="I35.i2.p1.m1" class="ltx_Math" alttext="X\sim{{Beta}}\left({a,b}\right)" display="inline"><mrow><mi>X</mi><mo>∼</mo><mrow><mi>B</mi><mo>⁢</mo><mi>e</mi><mo>⁢</mo><mi>t</mi><mo>⁢</mo><mi>a</mi><mo>⁢</mo><mrow><mo>(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>)</mo></mrow></mrow></mrow></math>, then</p>
-<table id="EGx77" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+<table id="EGx76" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
 
 <tbody id="Ex257"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
 <td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
@@ -1657,7 +1657,7 @@ x)^{b-1},0\leq x\leq 1" display="block"><mrow><mrow><mrow><mpadded width="0.427e
 
 <div id="SS6.SSSx3.p1" class="ltx_para">
 <p class="ltx_p">We have a Beta prior and a Binomial likelihood, so assume we observe <math id="SS6.SSSx3.p1.m1" class="ltx_Math" alttext="X=x" display="inline"><mrow><mi>X</mi><mo>=</mo><mi>x</mi></mrow></math> successes. Then our posterior is:</p>
-<table id="EGx78" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+<table id="EGx77" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
 
 <tbody id="Ex260"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
 <td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
@@ -1731,7 +1731,7 @@ b-1}" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mrow><mrow><mrow><mo>(</m
 <span class="ltx_tag ltx_tag_item">•</span> 
 <div id="I37.i5.p1" class="ltx_para">
 <p class="ltx_p">We also note that we can express the posterior expectation for <math id="I37.i5.p1.m1" class="ltx_Math" alttext="p\mid x" display="inline"><mrow><mi>p</mi><mo>∣</mo><mi>x</mi></mrow></math> as:</p>
-<table id="EGx79" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+<table id="EGx78" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
 
 <tbody id="Ex262"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
 <td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
@@ -1778,7 +1778,7 @@ b-1}" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mrow><mrow><mrow><mo>(</m
 
 <div id="SS6.SSSx4.p1" class="ltx_para">
 <p class="ltx_p">In the drug trial example, we considered two different priors <math id="SS6.SSSx4.p1.m1" class="ltx_Math" alttext="{f}_{1}\left({p}\right)=1" display="inline"><mrow><mrow><msub><mi>f</mi><mn>1</mn></msub><mo>⁢</mo><mrow><mo>(</mo><mi>p</mi><mo>)</mo></mrow></mrow><mo>=</mo><mn>1</mn></mrow></math> and <math id="SS6.SSSx4.p1.m2" class="ltx_Math" alttext="{f}_{2}\left({p}\right)=2p" display="inline"><mrow><mrow><msub><mi>f</mi><mn>2</mn></msub><mo>⁢</mo><mrow><mo>(</mo><mi>p</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mn>2</mn><mo>⁢</mo><mi>p</mi></mrow></mrow></math>. It is fairly straightforward to see that</p>
-<table id="EGx80" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+<table id="EGx79" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
 
 <tbody id="Ex263"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
 <td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
@@ -1799,7 +1799,7 @@ b-1}" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mrow><mrow><mrow><mo>(</m
 </div>
 <div id="SS6.SSSx4.p3" class="ltx_para">
 <p class="ltx_p">Given we can express the priors as Beta distributions, it is then trivial to apply the Beta-binomial model, which gives the posteriors as</p>
-<table id="EGx81" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+<table id="EGx80" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
 
 <tbody id="Ex265"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
 <td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
@@ -1976,7 +1976,7 @@ make optimal decisions under uncertainty. <span class="ltx_text ltx_font_bold">I
 <div id="SS7.SSSx3.p2" class="ltx_para">
 <p class="ltx_p">Using a flat uniform prior for <math id="SS7.SSSx3.p2.m1" class="ltx_Math" alttext="p" display="inline"><mi>p</mi></math>, <math id="SS7.SSSx3.p2.m2" class="ltx_Math" alttext="p\sim{{U}}\left[{0,1}\right]" display="inline"><mrow><mi>p</mi><mo>∼</mo><mrow><mi>U</mi><mo>⁢</mo><mrow><mo>[</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>]</mo></mrow></mrow></mrow></math>, we saw that our posterior for <math id="SS7.SSSx3.p2.m3" class="ltx_Math" alttext="p\mid x" display="inline"><mrow><mi>p</mi><mo>∣</mo><mi>x</mi></mrow></math> was <math id="SS7.SSSx3.p2.m4" class="ltx_Math" alttext="{{Beta}}\left({12,6}\right)" display="inline"><mrow><mi>B</mi><mo>⁢</mo><mi>e</mi><mo>⁢</mo><mi>t</mi><mo>⁢</mo><mi>a</mi><mo>⁢</mo><mrow><mo>(</mo><mn>12</mn><mo>,</mo><mn>6</mn><mo>)</mo></mrow></mrow></math>. From the properties of the Beta distribution
 (recall that if <math id="SS7.SSSx3.p2.m5" class="ltx_Math" alttext="Y\sim Beta(a,b)" display="inline"><mrow><mi>Y</mi><mo>∼</mo><mrow><mi>B</mi><mo>⁢</mo><mi>e</mi><mo>⁢</mo><mi>t</mi><mo>⁢</mo><mi>a</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math> then <math id="SS7.SSSx3.p2.m6" class="ltx_Math" alttext="Mode(Y)=(a-1)/(a+b-2)" display="inline"><mrow><mrow><mi>M</mi><mo>⁢</mo><mi>o</mi><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi>e</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>Y</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>a</mi><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>/</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>a</mi><mo>+</mo><mi>b</mi></mrow><mo>−</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></math> and <math id="SS7.SSSx3.p2.m7" class="ltx_Math" alttext="\textrm{E}\left[Y\right]=a/(a+b)" display="inline"><mrow><mrow><mtext>E</mtext><mo>⁢</mo><mrow><mo>[</mo><mi>Y</mi><mo>]</mo></mrow></mrow><mo>=</mo><mrow><mi>a</mi><mo>/</mo><mrow><mo stretchy="false">(</mo><mrow><mi>a</mi><mo>+</mo><mi>b</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></math>), we can find the values of the possible point estimates to be as follows :</p>
-<table id="EGx82" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+<table id="EGx81" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
 
 <tbody id="Ex268"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
 <td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
@@ -1996,7 +1996,7 @@ make optimal decisions under uncertainty. <span class="ltx_text ltx_font_bold">I
 </div>
 <div id="SS7.SSSx3.p3" class="ltx_para">
 <p class="ltx_p">However, if we consider the second prior for <math id="SS7.SSSx3.p3.m1" class="ltx_Math" alttext="p" display="inline"><mi>p</mi></math>, where <math id="SS7.SSSx3.p3.m2" class="ltx_Math" alttext="{f}\!\left({p}\right)=2p" display="inline"><mrow><mrow><mpadded width="0.427em"><mi>f</mi></mpadded><mo>⁢</mo><mrow><mo>(</mo><mi>p</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mn>2</mn><mo>⁢</mo><mi>p</mi></mrow></mrow></math>, then we found that <math id="SS7.SSSx3.p3.m3" class="ltx_Math" alttext="p\mid x" display="inline"><mrow><mi>p</mi><mo>∣</mo><mi>x</mi></mrow></math> was <math id="SS7.SSSx3.p3.m4" class="ltx_Math" alttext="{{Beta}}\left({13,6}\right)" display="inline"><mrow><mi>B</mi><mo>⁢</mo><mi>e</mi><mo>⁢</mo><mi>t</mi><mo>⁢</mo><mi>a</mi><mo>⁢</mo><mrow><mo>(</mo><mn>13</mn><mo>,</mo><mn>6</mn><mo>)</mo></mrow></mrow></math>, and therefore that:</p>
-<table id="EGx83" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+<table id="EGx82" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
 
 <tbody id="Ex270"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
 <td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
@@ -2119,7 +2119,7 @@ make optimal decisions under uncertainty. <span class="ltx_text ltx_font_bold">I
 <br class="ltx_break"><span class="ltx_text ltx_font_bold">Solution:</span> Let <math id="SS7.SSSx6.p1.m3" class="ltx_Math" alttext="X^{*}" display="inline"><msup><mi>X</mi><mo>∗</mo></msup></math> be the number of patients in the new trial whose condition improves. The question is then asking for the posterior predictive probability <math id="SS7.SSSx6.p1.m4" class="ltx_Math" alttext="\operatorname{{P}}\left[{X^{*}=3\mid X=11}\right]" display="inline"><mrow><mi mathvariant="normal">P</mi><mo>⁡</mo><mrow><mo>[</mo><mrow><msup><mi>X</mi><mo>∗</mo></msup><mo>=</mo><mrow><mn>3</mn><mo>∣</mo><mi>X</mi></mrow><mo>=</mo><mn>11</mn></mrow><mo>]</mo></mrow></mrow></math>. Applying the technique above, and using probability rather than density for the discrete random variables, we have</p>
 </div>
 <div id="SS7.SSSx6.p2" class="ltx_para">
-<table id="EGx84" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+<table id="EGx83" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
 
 <tbody id="Ex275"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
 <td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
@@ -2171,7 +2171,7 @@ make optimal decisions under uncertainty. <span class="ltx_text ltx_font_bold">I
 </div>
 <div id="SS7.SSSx6.p3" class="ltx_para">
 <p class="ltx_p">Alternatively, if we were to approach the problem in the standard statistical way, we would use the MLE from the first trial, <math id="SS7.SSSx6.p3.m1" class="ltx_Math" alttext="\hat{p}_{\text{MLE}}=\frac{11}{16}" display="inline"><mrow><msub><mover accent="true"><mi>p</mi><mo>^</mo></mover><mtext>MLE</mtext></msub><mo>=</mo><mfrac><mn>11</mn><mn>16</mn></mfrac></mrow></math> and plug that into the likelihood for <math id="SS7.SSSx6.p3.m2" class="ltx_Math" alttext="X^{*}" display="inline"><msup><mi>X</mi><mo>∗</mo></msup></math>. So, what we would actually be calculating is</p>
-<table id="EGx85" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+<table id="EGx84" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
 
 <tbody id="Ex281"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
 <td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
@@ -2531,7 +2531,7 @@ make optimal decisions under uncertainty. <span class="ltx_text ltx_font_bold">I
 </div>
 <div id="SS7.SSSx12.p2" class="ltx_para">
 <p class="ltx_p">To find the approximating Normal distribution, we require the mean and variance of the posterior distribution. These are</p>
-<table id="EGx86" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+<table id="EGx85" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
 
 <tbody id="Ex287"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
 <td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
@@ -2543,7 +2543,7 @@ make optimal decisions under uncertainty. <span class="ltx_text ltx_font_bold">I
 </tr></tbody>
 </table>
 <p class="ltx_p">So, our approximating Normal distribution is <math id="SS7.SSSx12.p2.m1" class="ltx_Math" alttext="{N}\!\left(0.6666667,0.01169591\right)" display="inline"><mrow><mpadded width="0.742em"><mi>N</mi></mpadded><mo>⁢</mo><mrow><mo>(</mo><mn>0.6666667</mn><mo>,</mo><mn>0.01169591</mn><mo>)</mo></mrow></mrow></math>. The approximate <math id="SS7.SSSx12.p2.m2" class="ltx_Math" alttext="95\%" display="inline"><mrow><mn>95</mn><mo>%</mo></mrow></math> Normal credible interval is then simply</p>
-<table id="EGx87" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+<table id="EGx86" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
 
 <tbody id="Ex288"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
 <td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
@@ -2656,7 +2656,7 @@ make optimal decisions under uncertainty. <span class="ltx_text ltx_font_bold">I
 </tr></tbody>
 </table>
 <p class="ltx_p">where</p>
-<table id="EGx88" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+<table id="EGx87" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
 
 <tbody id="Ex293"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
 <td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
@@ -2726,7 +2726,7 @@ n\tau}{t_{1}}\bar{x}=km+(1-k)\bar{x}," display="block"><mrow><mrow><msub><mi>m</
 <span class="ltx_tag ltx_tag_item">•</span> 
 <div id="I58.i1.p1" class="ltx_para">
 <p class="ltx_p">Before we prove the conjugacy theorem above, we need to find the core for a Normal density, <math id="I58.i1.p1.m1" class="ltx_Math" alttext="X\sim{N}\!\left(\mu,\sigma^{2}=\frac{1}{\tau}\right)" display="inline"><mrow><mi>X</mi><mo>∼</mo><mrow><mpadded width="0.742em"><mi>N</mi></mpadded><mo>⁢</mo><mrow><mo>(</mo><mrow><mrow><mi>μ</mi><mo>,</mo><msup><mi>σ</mi><mn>2</mn></msup></mrow><mo>=</mo><mfrac><mn>1</mn><mi>τ</mi></mfrac></mrow><mo>)</mo></mrow></mrow></mrow></math>. As the random variable is <math id="I58.i1.p1.m2" class="ltx_Math" alttext="X" display="inline"><mi>X</mi></math> here, we only care about the terms in <math id="I58.i1.p1.m3" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math> and so we find the following:</p>
-<table id="EGx89" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+<table id="EGx88" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
 
 <tbody id="E117"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
 <td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
@@ -2766,7 +2766,7 @@ x\mu\right)}\right\}." display="inline"><mrow><mrow><mi></mi><mo>∝</mo><mrow><
 
 <div id="SS8.SSSx3.p1" class="ltx_para">
 <p class="ltx_p">First, note that the normalising constant of a Normal distribution, <math id="SS8.SSSx3.p1.m1" class="ltx_Math" alttext="1/\sqrt{2\pi\sigma^{2}}" display="inline"><mrow><mn>1</mn><mo>/</mo><msqrt><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi><mo>⁢</mo><msup><mi>σ</mi><mn>2</mn></msup></mrow></msqrt></mrow></math>, does not depend on the mean <math id="SS8.SSSx3.p1.m2" class="ltx_Math" alttext="\mu" display="inline"><mi>μ</mi></math>, so we can just absorb it into the proportionality constant immediately. Thus our likelihood takes the form</p>
-<table id="EGx90" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+<table id="EGx89" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
 
 <tbody id="Ex297"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
 <td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
@@ -2824,7 +2824,7 @@ _{i}-\mu)^{2}}\right\}" display="inline"><mrow><mi></mi><mo>∝</mo><mrow><mstyl
 </div>
 <div id="SS8.SSSx3.p3" class="ltx_para">
 <p class="ltx_p">Thus our posterior pdf for <math id="SS8.SSSx3.p3.m1" class="ltx_Math" alttext="\mu\mid x_{1},\dots,x_{n}" display="inline"><mrow><mi>μ</mi><mo>∣</mo><mrow><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>x</mi><mi>n</mi></msub></mrow></mrow></math> is proportional to the product of the likelihood and prior:</p>
-<table id="EGx91" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+<table id="EGx90" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
 
 <tbody id="Ex303"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
 <td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
@@ -2901,7 +2901,7 @@ _{i}-\mu)^{2}}\right\}" display="inline"><mrow><mi></mi><mo>∝</mo><mrow><mstyl
 <span class="ltx_tag ltx_tag_item">•</span> 
 <div id="I59.i3.p1" class="ltx_para">
 <p class="ltx_p">By the above theorem for conjugate normal priors to a normal likelihood, we have that <math id="I59.i3.p1.m1" class="ltx_Math" alttext="\mu\mid x_{1},\dots,x_{n}" display="inline"><mrow><mi>μ</mi><mo>∣</mo><mrow><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>x</mi><mi>n</mi></msub></mrow></mrow></math> is <math id="I59.i3.p1.m2" class="ltx_Math" alttext="{N}\!\left(m_{1},v_{1}^{2}=\frac{1}{t_{1}}\right)" display="inline"><mrow><mpadded width="0.742em"><mi>N</mi></mpadded><mo>⁢</mo><mrow><mo>(</mo><mrow><mrow><msub><mi>m</mi><mn>1</mn></msub><mo>,</mo><msubsup><mi>v</mi><mn>1</mn><mn>2</mn></msubsup></mrow><mo>=</mo><mfrac><mn>1</mn><msub><mi>t</mi><mn>1</mn></msub></mfrac></mrow><mo>)</mo></mrow></mrow></math> where</p>
-<table id="EGx92" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+<table id="EGx91" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
 
 <tbody id="Ex310"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
 <td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
@@ -2928,7 +2928,7 @@ _{i}-\mu)^{2}}\right\}" display="inline"><mrow><mi></mi><mo>∝</mo><mrow><mstyl
 <span class="ltx_tag ltx_tag_item">•</span> 
 <div id="I59.i4.p1" class="ltx_para">
 <p class="ltx_p">A posterior <math id="I59.i4.p1.m1" class="ltx_Math" alttext="95\%" display="inline"><mrow><mn>95</mn><mo>%</mo></mrow></math> credible interval is therefore:</p>
-<table id="EGx93" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+<table id="EGx92" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
 
 <tbody id="Ex313"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
 <td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
@@ -2970,7 +2970,7 @@ _{i}-\mu)^{2}}\right\}" display="inline"><mrow><mi></mi><mo>∝</mo><mrow><mstyl
 <span class="ltx_tag ltx_tag_item">•</span> 
 <div id="I59.i7.p1" class="ltx_para">
 <p class="ltx_p">Suppose that to satisfy health standards we require the contamination to be below a value of <math id="I59.i7.p1.m1" class="ltx_Math" alttext="600" display="inline"><mn>600</mn></math>. What is <math id="I59.i7.p1.m2" class="ltx_Math" alttext="\operatorname{{P}}\left[{\mu&lt;600\mid x_{1},\dots,x_{n}}\right]" display="inline"><mrow><mi mathvariant="normal">P</mi><mo>⁡</mo><mrow><mo>[</mo><mrow><mi>μ</mi><mo lspace="0em">⁢</mo><mrow><mo fence="true" rspace="0em">&lt;</mo><mn>600</mn><mo fence="true" lspace="0em">∣</mo></mrow><mo lspace="0em">⁢</mo><msub><mi>x</mi><mn>1</mn></msub></mrow><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>x</mi><mi>n</mi></msub><mo>]</mo></mrow></mrow></math>?</p>
-<table id="EGx94" class="ltx_equationgroup ltx_eqn_eqnarray ltx_eqn_table">
+<table id="EGx93" class="ltx_equationgroup ltx_eqn_eqnarray ltx_eqn_table">
 
 <tbody id="Ex317">
 <tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
